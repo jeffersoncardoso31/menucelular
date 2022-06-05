@@ -1,0 +1,65 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+    background-color: red;
+}
+#check{
+    display: none;
+}
+#menu label{
+    font-size: 4em;
+    margin-right: 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container img{
+    width: 80px;
+    margin-top: 10px;
+}
+.containerMenu a{
+    color: white;
+    text-decoration: none;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+    padding: 20px;
+    font-size: 1.4em;
+}
+.lista a{
+    display: block;
+    margin: 20px;
+}
+.containerMenu a:hover{
+    background-color: white;
+    color: red;
+}
+.containerMenu{
+    /* display: none; */
+    height: 45vh;
+    position: fixed;
+    background-color: black;
+    top: 100px;
+    width: 100%;
+    right: -100%;
+    transition: all 0.7s;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+#check:checked ~ .containerMenu{
+    right: 0px;
+}
